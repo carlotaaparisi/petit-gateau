@@ -1,0 +1,143 @@
+<% include partials/header %>
+
+
+
+<div class="parallaxOne">
+    <div class="caption headerTwo">
+        <div class="lineDecorationShort"></div>
+        <div class="spacer"></div>
+        <h6><em>Welcome to cardiage</em></h6>
+        <div class="spacer"></div>
+        <h1>CREATIVE STUDIO</h1>
+        <div class="spacer"></div>
+        <h4>EVENT AND WEDDING STATIONERY 
+            <br>
+            SPECIALISED IN LASER CUTTING
+        </h4>
+        <div class="spacer"></div>
+        <div class="lineDecorationShort"></div>
+    </div>
+</div>
+    <div style="background-color: rgba(56, 128, 120, 0.4); padding: 0; margin: 0">
+        <div class="container-fluid" style="margin: 0 auto; max-width: 1200px; padding: 0">
+        <div class="mainText row text-center" style="margin: 50px">
+            <div class="col-xs-12 col-sm-12 col-md-4 align-self-center" style="">
+                <h4>
+                    <span class="textTitle">TECHNIQUE</span>
+                </h4>
+                <div class="spacer"></div>
+                <h4 class="text-justify">
+                    Laser cutting is an exquisite cutting technique that allows us to create delicate and complex designs that will surprise all your guests. Our invitations become unique products thanks to the high variety of materials and possibilities, along with the finesse and elegancy that defines this technique.                    
+                </h4>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 align-self-center" style="">
+                <h4>
+                    <span class="textTitle">PHILOSOPHY</span>
+                </h4>
+                <div class="spacer"></div>
+                <h4 class="text-justify">
+                    We know the importance of the desires of our clients, therefore we like to work all together with them to develop a product that it is completely personalised. Your story is the base of our design, and it will be present in every detail thanks to our continue feedback.                   
+                </h4>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 align-self-center" style="">
+                <h4>
+                    <span class="textTitle">THE STUDIO</span>
+                </h4>
+                <div class="spacer"></div>
+                <h4 class="text-justify">
+                    Our products are completely designed and assembled in our studio based in Valencia, Spanish Mediterranean coast. This allow us to have the absolute control of the project during all the process. That way, we achieve high quality. If you want to know more you can contact us <a href="/contact">here</a> or through hello@cardiage.com
+                </h4>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+<div class="parallaxTwo">
+    <div class="caption">
+        <h1>OUR WORK</h1>
+    </div>
+</div>
+    <div style="background-color: rgba(56, 128, 120, 0.4); padding: 0; margin: 0">
+        <div class="container-fluid" style="margin: 0 auto; max-width: 1200px; padding: 0">
+            
+            <div class="row text-center" style="margin: 50px auto">
+                <div class="col-xs-12 col-sm-12 col-md-12 align-self-center" style="">
+                    <h2 class="headerTwo">Discover some of our projects</h2>
+                    <div class="spacer"></div>
+                        
+                    <a class="btn btn-default" href="/work" role="button">Discover</a>
+                    <div class="spacer"></div>
+                    <div class="lineDecoration"></div>
+                </div>
+                <!--projects view-->
+                        <div class="row text-center" style="display:flex; flex-wrap: wrap">
+                            <% projects.forEach(function(project){ %>
+                                <div class="col-xs-12 col-sm-12 col-md-4">
+                                    <div class="thumbnail">
+                                        <img src="<%= project.image %>">
+                                    <div class="caption">
+                                        <h4><%= project.name %></h4>
+                                    </div>
+                                    </div>
+                                </div>
+                            <% }); %>
+                        </div>
+            </div>
+            </div>
+    </div>
+    <div style="background-color: rgba(56, 128, 120, 0.4); padding: 0; margin: 0">
+        <div class="container-fluid" style="margin: 0 auto; max-width: 1200px; padding: 0">
+        <div class="mainText row text-center" style="margin: 50px">
+            <div class="col-xs-12 col-sm-12 col-md-4 align-self-center" style="">
+                <h4>
+                    <span class="textTitle">1. QUOTE</span>
+                </h4>
+                <div class="spacer"></div>
+                <h4 class="text-justify">
+                    Do you want to realise a project? Contact us to get a personalised quote. The price will vary according to the number of invitations, quantity of elements, complexity, materials, etc. Ask for a quote without engagement here or filling in the next quotation express form.                
+                </h4>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 align-self-center" style="">
+                <h4><span class="textTitle">2. DESIGN</span></h4>
+                <div class="spacer"></div>
+                <h4 class="text-justify">
+                    Once upon the quote is accepted, we are ready to start the design process. Either if you don't really know what you are looking for, or you don't know how to start, we will help you to develop your idea. We only need to find the start! Tell us about you, your preferences or send us some reference.                 
+                </h4>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 align-self-center" style="">
+                <h4>
+                    <span class="textTitle">3. PRODUCTION</span>
+                </h4>
+                <div class="spacer"></div>
+                <h4 class="text-justify">
+                    Once we finish the design, we will start the production. First, a preliminar prototype will be send to check all the possible changes and the final materials. We recommend to order in advance as the production time will vary depending the quantity of elements and its complexity. 
+                </h4>
+            </div>
+        </div>
+        </div>
+    </div>
+        
+
+
+
+
+<div class="parallaxTwo">
+    <div class="caption">
+        <h1>BLOG</h1>
+        <h4 class="headerTwo">Coming soon</h4>
+    </div>
+</div>
+    <div style="background-color: grey; padding: 0; margin: 0">
+        <div class="container-fluid" style="margin: 0 auto; max-width: 1000px; padding: 0; background-color: grey">
+        <div class="mainText row text-center" style="margin: 50px">
+            <div class="col-xs-12 col-sm-12 col-md-12 align-self-center" style="">
+                <h4>
+                    Every Thursday we will be posting a new entry in our blog. Amazing ideas to make your own invitations, trends, design, cuisine,… a bit of everything to start the weekend with freshly new ideas. Do not forget to hit subscribe so you don't miss any entry! 
+                </h4>      
+            </div>
+         
+        </div>
+        </div>
+    </div>
+<% include partials/footer %>
